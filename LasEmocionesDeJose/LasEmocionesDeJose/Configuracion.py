@@ -1,9 +1,7 @@
 from collections import namedtuple
 import random, pygame
-
-
-FPS_inicial = 3
-TIEMPO_MAX = 61
+  
+FPS = 60
 
 ANCHO = 800
 ALTO = 600
@@ -28,6 +26,8 @@ Navy	= 	(0,0,128)
 TAMANNO_TITULOS = 56
 TAMANNO_LETRA = 36
 F_AarvarkCafe = 'Fuentes/Aarvark Cafe.ttf'
+SONIDO_Inicio = 'Sonidos/Background.mp3'
+SONIDO_Continuo = 'Sonidos/Background_Inicio.mp3'
 
 Dimensiones = [ANCHO,ALTO]
 Fondo_Intro='Imagenes/BackGround_Intro.png'

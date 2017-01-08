@@ -39,6 +39,9 @@
     <Content Include="Fuentes\Aarvark Cafe.ttf" />
     <Content Include="Fuentes\AmazDooMLeft.ttf" />
     <Content Include="Imagenes\BackGround_Intro.png" />
+    <Content Include="Imagenes\Caras.jpg" />
+    <Content Include="Sonidos\Background.mp3" />
+    <Content Include="Sonidos\Background_Inicio.mp3" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

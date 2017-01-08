@@ -12,9 +12,14 @@ reloj = pygame.time.Clock()
 hecho = False 
 Mostrar_Inicio = True
 Pagina_de_Inicio = 1
- 
+SONG_END = pygame.USEREVENT + 1
+
 Fuente1 = pygame.font.Font(F_AarvarkCafe, TAMANNO_TITULOS) 
 Background_Inicio=pygame.image.load(Fondo_Intro).convert()
+
+pygame.mixer.music.set_endevent(SONG_END)
+pygame.mixer.music.load(SONIDO_Inicio)
+pygame.mixer.music.play()
 
 # -------- Bucle de la Pagina de Inicio -----------
 while not hecho and Mostrar_Inicio:
@@ -24,7 +29,13 @@ while not hecho and Mostrar_Inicio:
         if evento.type == pygame.MOUSEBUTTONDOWN:
             Pagina_de_Inicio += 1
             if Pagina_de_Inicio == 2:
-                Mostrar_Inicio = False
+                Mostrar_Inicio = False 
+                pygame.mixer.music.stop()
+                pygame.mixer.music.load(SONIDO_Continuo)
+                pygame.mixer.music.play()
+        if evento.type ==SONG_END:
+            pygame.mixer.music.load(SONIDO_Inicio)
+            pygame.mixer.music.play()
  
     # Limpia la pantalla y establece su color de fondo
     pantalla.fill(NEGRO)
@@ -50,13 +61,16 @@ while not hecho:
     for evento in pygame.event.get(): # El usuario hizo algo
         if evento.type == pygame.QUIT: # Si el usuario hace click sobre cerrar
             hecho = True # Marca que ya lo hemos hecho, de forma que abandonamos el bucle
+        if evento.type ==SONG_END:
+            pygame.mixer.music.load(SONIDO_Continuo)
+            pygame.mixer.music.play()
  
     # Limpia la pantalla y establece su color de fondo
     pantalla.fill(NEGRO)
   
      
     # Limitamos a 60 fotogramas por segundo.
-    reloj.tick(60) 
+    reloj.tick(FPS) 
     # Avancemos y actualicemos la pantalla con lo que hemos dibujado.
     pygame.display.flip()
      
