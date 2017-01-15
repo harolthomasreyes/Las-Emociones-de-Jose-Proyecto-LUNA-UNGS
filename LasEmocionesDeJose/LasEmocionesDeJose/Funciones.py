@@ -45,4 +45,10 @@ def imageButton(gameDisplay,Imagen,x,y,w,h,action=None):
     imgImagen=pygame.image.load(Imagen).convert_alpha()
     gameDisplay.blit(imgImagen, [x,y])
 
- 
+def CambiarDeColorLetra(gameDisplay,Fuente,palabras,Coordenadas,color):
+    texto = Fuente.render(palabras, True, color) 
+    gameDisplay.blit(texto, Coordenadas)
+
+def MostrarTexto(gameDisplay,Fuente,palabras,Coordenadas,color):
+    texto1 = Fuente.render(palabras, True, color)
+    gameDisplay.blit(texto1, Coordenadas)

@@ -68,20 +68,29 @@ def game_loop():
                 PlayMusicGameMaster()
  
         pantalla.blit(Jose_Cumpleanos,(0,0)) 
-        texto = Fuente2.render("Jose cumpleanos", True, Teal)
-        pantalla.blit(texto, [270, 100])
-  
 
+  
+        MostrarTexto(pantalla,Fuente2,"Jose",[270, 100],Teal)
+        MostrarTexto(pantalla,Fuente2,"cumpleanos",[340, 100],Teal)
+  
+   
         imageButton(pantalla,Close,ANCHO - 50,0,50,50,QuitGame)
-        imageButton(pantalla,Block_Jose, 270,0,130,99)
-        imageButton(pantalla,Block_JoseCumpleanos, 420,0,130,99)
+
+        imageButton(pantalla,Block_Jose, 270,0,130,99,PintarJose)
+        imageButton(pantalla,Block_JoseCumpleanos, 420,0,130,99,PintarCumpleAnos)
 
 
         # Limitamos a 60 fotogramas por segundo.
         reloj.tick(FPS) 
         # Avancemos y actualicemos la pantalla con lo que hemos dibujado.
         pygame.display.flip()
-     
+
+def PintarJose():
+    CambiarDeColorLetra(pantalla,Fuente2,"Jose",[270, 100],Blue)
+def PintarCumpleAnos():
+    CambiarDeColorLetra(pantalla,Fuente2,"cumpleanos",[340, 100],Blue)
+
+
 # Partate bien con el IDLE. Si nos olvidamos de esta linea, el programa se 'colgara'
 # en la salida.
 game_intro()
