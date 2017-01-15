@@ -31,3 +31,10 @@ SONIDO_Continuo = 'Sonidos/Background_Inicio.mp3'
 
 Dimensiones = [ANCHO,ALTO]
 Fondo_Intro='Imagenes/BackGround_Intro.png'
+Fondo_Intro='Imagenes/BackGround_Intro.png'
+FlechaDerecha='Imagenes/FlechaDerecha.png'
+Close='Imagenes/Close.png'
+NinosJugando = 'Imagenes/NinosJugando.png'
+Joseensucumpleanos = 'Imagenes/Joseensucumpleanos.jpg'
+Block_Jose = 'Imagenes/Block_Jose.png'
+Block_JoseCumpleanos= 'Imagenes/Block_JoseCumpleanos.png'

@@ -39,7 +39,12 @@
     <Content Include="Fuentes\Aarvark Cafe.ttf" />
     <Content Include="Fuentes\AmazDooMLeft.ttf" />
     <Content Include="Imagenes\BackGround_Intro.png" />
+    <Content Include="Imagenes\Block_Jose.png" />
+    <Content Include="Imagenes\Block_JoseCumpleanos.png" />
     <Content Include="Imagenes\Caras.jpg" />
+    <Content Include="Imagenes\Close.png" />
+    <Content Include="Imagenes\FlechaDerecha.png" />
+    <Content Include="Imagenes\Joseensucumpleanos.jpg" />
     <Content Include="Sonidos\Background.mp3" />
     <Content Include="Sonidos\Background_Inicio.mp3" />
   </ItemGroup>
