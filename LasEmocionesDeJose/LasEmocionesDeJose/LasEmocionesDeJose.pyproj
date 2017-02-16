@@ -29,24 +29,42 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="LasEmocionesDeJose.py" />
+    <Compile Include="setup.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fuentes\" />
     <Folder Include="Imagenes\" />
     <Folder Include="Sonidos\" />
+    <Folder Include="Sonidos\Escenas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fuentes\Aarvark Cafe.ttf" />
     <Content Include="Fuentes\AmazDooMLeft.ttf" />
+    <Content Include="Fuentes\arial.ttf" />
+    <Content Include="Imagenes\Background_Escena3.png" />
     <Content Include="Imagenes\BackGround_Intro.png" />
+    <Content Include="Imagenes\Bien.png" />
     <Content Include="Imagenes\Block_Jose.png" />
     <Content Include="Imagenes\Block_JoseCumpleanos.png" />
+    <Content Include="Imagenes\Calle.png" />
     <Content Include="Imagenes\Caras.jpg" />
     <Content Include="Imagenes\Close.png" />
+    <Content Include="Imagenes\Crecer.png" />
+    <Content Include="Imagenes\Escena2.png" />
     <Content Include="Imagenes\FlechaDerecha.png" />
+    <Content Include="Imagenes\Fuerte.png" />
     <Content Include="Imagenes\Joseensucumpleanos.jpg" />
+    <Content Include="Imagenes\Jose_Asustado.png" />
+    <Content Include="Imagenes\NinosJugando.png" />
     <Content Include="Sonidos\Background.mp3" />
     <Content Include="Sonidos\Background_Inicio.mp3" />
+    <Content Include="Sonidos\Escenas\CELEBRANDO.mp3" />
+    <Content Include="Sonidos\Escenas\Celebrar.wav" />
+    <Content Include="Sonidos\Escenas\Cumpleanos.mp3" />
+    <Content Include="Sonidos\Escenas\Jose.wav" />
+    <Content Include="Sonidos\Escenas\Jose.wma" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

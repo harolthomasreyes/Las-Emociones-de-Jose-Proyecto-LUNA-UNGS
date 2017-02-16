@@ -1,9 +1,21 @@
 import  pygame
 from Configuracion  import *
 
+ 
+
 def QuitGame():
     pygame.quit()
     quit()
+
+def ReproducirAudio(Audio):
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load(Audio)
+    pygame.mixer.music.play()
+
+def PlayCelebrar():
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load(SONIDO_CELEBRAR)
+    pygame.mixer.music.play()
 
 def PlayMusicGameMaster():
     pygame.mixer.music.stop()
